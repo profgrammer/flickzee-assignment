@@ -9,10 +9,10 @@ const bp = require('body-parser');
 //     log: 'error'
 // });
 
-console.log(process.env.USERNAME)
+// console.log(process.env.USERNAME)
 
 const esClient = new es.Client({
-  hosts: [`https://${process.env.USERNAME}:${process.env.PASSWORD}@${process.env.ENDPOINT}:${process.env.PORT}`]
+  hosts: [`https://${process.env.ESUSERNAME}:${process.env.ESPASSWORD}@${process.env.ESENDPOINT}:${process.env.ESPORT}`]
 });
 
 app.use(bp.json());
