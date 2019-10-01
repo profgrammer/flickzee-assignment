@@ -9,7 +9,7 @@ const bp = require('body-parser');
 //     log: 'error'
 // });
 
-// console.log(process.env.PASSWORD)
+console.log(process.env.USERNAME)
 
 const esClient = new es.Client({
   hosts: [`https://${process.env.USERNAME}:${process.env.PASSWORD}@${process.env.ENDPOINT}:${process.env.PORT}`]
